@@ -1,7 +1,8 @@
 # DWInfiniteAutoScrollBanner
 DWInfiniteAutoScrollBanner is a view used for build an infinite scroll view.
 
-How to use:
+# How to use:
+```html
 @property (weak, nonatomic) IBOutlet DWInfiniteAutoScrollBanner *infiniteAutoScrollBanner;
 //hud
 DWDemoBannerHUD *hud = [[[NSBundle mainBundle] loadNibNamed:@"DWDemoBannerHUD" owner:nil options:nil] lastObject];
