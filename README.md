@@ -17,3 +17,8 @@ NSMutableArray<DWBannerData *> *dataList = [NSMutableArray array];
 [dataList addObject:[[DWBannerData alloc] initWithImage:[UIImage imageNamed:@"bannerImage2"]]];
 [dataList addObject:[[DWBannerData alloc] initWithImage:[UIImage imageNamed:@"bannerImage3"]]];
 [self.infiniteAutoScrollBanner updateWithBannerDataList:dataList];
+
+# Note:
+- Use -ObjC in projects in which you want to use class DWInfiniteAutoScrollBanner in xib.
+- HUD view will block user interaction in DWInfiniteAutoScrollBanner by default, if you want the HUD view to be interactive, you may need implement - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event and/or some related apis.
+- If you have SDWebImage linked, just use image URLs in DWBannerData
